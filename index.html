@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refreshing - Website</title>
+    <title>Password - Website</title>
 </head>
 <body>
-    <p>Update Index</p>
+    Password: <input type="password" value="Display" id="passInput"><br><br>
+<input type="checkbox" onclick="showpass()">Show Password
 </body>
 </html>
+<script>
+    function showpass() {
+    var x = document.getElementById("passInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+</script>
